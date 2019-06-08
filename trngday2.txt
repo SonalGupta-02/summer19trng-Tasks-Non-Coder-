@@ -1,0 +1,20 @@
+Ques-1:How to show History with date and time?
+
+Solution: HISTTIMEFORMAT="%d %m %y %T"
+	  echo 'export HISTTIMEFORMAT="%d %m %y %T" ' >>~/.bash_profile
+	  history 
+
+Ques-2: How to update history if entered manually in /home/username/.bash_history?
+
+Solution: 1.In terminal type "gedit .bash_history" and press Enter.
+	  2.Now do the changes in that file and save it.
+	  3.Open new terminal and type history.
+	  You can see the changes/updatation.  
+
+Ques-3: How to create multiple folders/directories at once in Windows?
+
+Solution: In command prompt,
+		Using loop:
+		FOR /L %G IN(1,1,10) DO md "fd_%G"
+
+
